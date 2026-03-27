@@ -81,7 +81,7 @@ tx(354,53, "3", sz=8, bold=True, col="white", anc="mm")
 
 # Avatar
 rr(360,53,386,87, r=10, fill="#06B6D4")
-tx(373,70, "RK", sz=11, bold=True, col="white", anc="mm")
+tx(373,70, "SG", sz=11, bold=True, col="white", anc="mm")
 
 # Role chip
 rr(20,102,162,120, r=9, fill="#FFFFFF22", outline="#FFFFFF33")
@@ -89,7 +89,7 @@ dot(31,111, 4, "#34D399")
 tx(40,111, "CEO   |   Super Admin", sz=9, bold=True, col="#FFFFFFDD", anc="lm")
 
 # Greeting
-tx(20,129, "Good morning, Rajan K.", sz=18, bold=True, col="white")
+tx(20,129, "Good morning, Sajan George.", sz=18, bold=True, col="white")
 tx(20,154, "Friday, 27 March 2026   |   Pandhal Industries", sz=11, col="#FFFFFF88")
 
 # ─────────────────────────────────────────────
