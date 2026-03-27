@@ -115,10 +115,12 @@ SY2 = SY+20
 CW2,CH2,GAP = 174,84,10
 
 STATS = [
-    ("#EFF6FF","#1A5FD4","14","Visitors Today", "+3 new","#D1FAE5","#059669"),
-    ("#D1FAE5","#059669","38","Machines Active","92%",   "#D1FAE5","#059669"),
-    ("#FEE2E2","#DC2626","3", "Active Alerts",  "1 crit","#FEE2E2","#DC2626"),
-    ("#FEF3C7","#D97706","78%","Training Done", "78%",   "#F1F5F9","#64748B"),
+    ("#EFF6FF","#1A5FD4","14", "Visitors Today",    "+3 new","#D1FAE5","#059669"),
+    ("#D1FAE5","#059669","38", "Machines Active",   "92%",   "#D1FAE5","#059669"),
+    ("#FEE2E2","#DC2626","3",  "Active Alerts",     "1 crit","#FEE2E2","#DC2626"),
+    ("#FEF3C7","#D97706","78%","Training Done",     "78%",   "#F1F5F9","#64748B"),
+    ("#F0FDF4","#059669","2.84L","Outlet Sales Today","Today","#F0FDF4","#059669"),
+    ("#F5F3FF","#6D28D9","142","Cust. Interactions","Today","#EDE9FE","#6D28D9"),
 ]
 for i,(ibg,icol,val,lbl,pill,pbg,pcol) in enumerate(STATS):
     col,row = i%2, i//2
@@ -133,7 +135,7 @@ for i,(ibg,icol,val,lbl,pill,pbg,pcol) in enumerate(STATS):
     tx(cx+12,cy+73, lbl, sz=10, col="#64748B")
 
 # ── OPERATIONS MODULES ──
-MY = SY2 + 2*(CH2+GAP) + 14
+MY = SY2 + 3*(CH2+GAP) + 14
 tx(16,MY, "Operations Modules", sz=13, bold=True)
 
 MODS = [
@@ -161,6 +163,12 @@ MODS = [
    "78% mandatory training complete  |  12 certifications due  |  6 departments",
    "78%","Completion","#0F172A",  "12","Certs Due","#D97706",  "34","Certified","#059669",
    "#1A5FD4"),
+
+  ("OT","#F0FDF4","#059669",
+   "Outlet Management",
+   "Sales: Rs.2.84L today  |  142 customer interactions  |  Avg order Rs.320  |  8 outlets",
+   "2.84L","Sales Today","#059669",  "142","Customers","#6D28D9",  "Rs.320","Avg Order","#0F172A",
+   "#059669"),
 ]
 
 mc_y = MY+18
