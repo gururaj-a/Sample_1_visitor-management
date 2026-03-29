@@ -4,7 +4,7 @@
 from PIL import Image, ImageDraw, ImageFont
 
 SCALE = 2
-W, H  = 390, 1460
+W, H  = 390, 1700
 
 img  = Image.new("RGB", (W*SCALE, H*SCALE), "#111827")
 draw = ImageDraw.Draw(img)
